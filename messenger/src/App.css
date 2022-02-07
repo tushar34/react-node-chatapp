@@ -1,0 +1,153 @@
+.App {
+  text-align: center;
+  display: flex;
+  align-items:center;
+  /* justify-content: center; */
+  flex-direction: row;
+}
+*{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+/* body{
+  background-image: url('bg.png')
+} */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.message_area{
+  display: flex;
+  flex-direction: column;
+  height:500px;
+  width:50%;
+  border:1px solid rgb(119, 119, 119);
+}
+
+.message{
+  height:90%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  background: #2196f3;
+}
+
+.bottom-control{
+  display: flex;
+  justify-content:space-between;
+  padding: 0 5px;
+  margin-top: 10px;
+}
+.textarea{
+    width: 85%;
+    outline: none;
+    height: 28px;
+    max-width: 85%;
+    max-height: 28px;
+    min-height: 28px;
+    min-width: 85%;
+    overflow-y: hidden;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+
+.send{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  animation-name: msg;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes msg {
+  from {
+    transform: translate(0deg);
+  }
+  to {
+    transform: translate(10deg);
+
+  }
+}
+.recive{
+  width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.text_msg{
+  /* width: 30%; */
+  width: auto;
+  max-width: 40%;
+  border-radius: 10px;
+  background: #49acfd;
+  margin: 20px 2px 0 2px; 
+}
+
+.join { 
+  width: 30%;
+  display: flex;
+  margin-top: 50px;
+  /* align-items: center; */
+  /* justify-content: center; */
+  flex-direction: column;
+  border:1px solid rgb(255, 248, 248);
+  border-radius: 10px;
+  box-shadow: 0 2px 15px 0px rgb(0 0 0 / 12%)
+}
+/* .join_box{
+  width: 50%;
+} */
+
+.join_detail{
+  display: flex;
+  flex-direction: column;
+}
+.submit-btn{
+  background: none;
+  border: 1px solid #30422e;
+  border-radius: 7px;
+  width: 90px;
+  height: 28px;
+}
+
+.send-user-name{
+  font-size: 12px;
+  padding: 2px 2px;
+}
+
+/* .main_join{
+  height:100%
+} */
