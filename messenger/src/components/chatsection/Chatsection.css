@@ -1,0 +1,60 @@
+.chat {
+    width: 75%;
+}
+
+.user-sec {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: darkgray
+}
+
+.profile {
+    margin: 5px 15px
+}
+
+.text-area {
+    background-color: aqua;
+}
+
+
+
+
+/* middle section  */
+.chat-section {
+    padding: 5px 10px;
+    overflow: scroll;
+    height: 500px
+}
+
+.user_mesaages {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.sender {
+    text-align: justify
+}
+
+.reciver {
+    text-align: justify;
+}
+
+.text_msg {
+    width: auto;
+    max-width: 40%;
+    border-radius: 10px;
+    background: #49acfd;
+    margin: 20px 2px 0 2px;
+}
+
+.chat-section::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chat-section::-webkit-scrollbar-thumb {
+    background: rgb(195 194 194);
+    border-radius: 20px;
+    height: 5px
+}

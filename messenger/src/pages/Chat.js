@@ -3,7 +3,9 @@ import socketClient from "socket.io-client";
 
 import { useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
+
 import Sidebar from "../components/sidebar/Sidebar";
+import Chatsection from "../components/chatsection/Chatsection";
 
 function Chat() {
   const location = useLocation();
@@ -68,7 +70,8 @@ function Chat() {
   return (
     <>
       <Sidebar />
-      <p>messenger</p>
+      <Chatsection/>
+      {/* <p>messenger</p> */}
       {/* {messagelist.map((msg, i) => {
         return <h6 key={i}>{msg.message}</h6>;
       })} */}

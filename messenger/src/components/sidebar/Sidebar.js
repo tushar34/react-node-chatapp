@@ -1,9 +1,245 @@
 import React from "react";
-import  './Sidebar.css';
+import "./Sidebar.css";
+import Avatar from "@mui/material/Avatar";
+import Stack from "@mui/material/Stack";
+import { styled } from "@mui/material/styles";
+import Badge from "@mui/material/Badge";
+
+const StyledBadge = styled(Badge)(({ theme }) => ({
+  "& .MuiBadge-badge": {
+    backgroundColor: "#44b700",
+    color: "#44b700",
+    boxShadow: `0 0 0 2px ${theme.palette.background.paper}`,
+    "&::after": {
+      position: "absolute",
+      top: "-1px",
+      left: "-1px",
+      width: "100%",
+      height: "100%",
+      borderRadius: "50%",
+      animation: "ripple 1.2s infinite ease-in-out",
+      border: "1px solid currentColor",
+      content: '""',
+    },
+  },
+  "@keyframes ripple": {
+    "0%": {
+      transform: "scale(.8)",
+      opacity: 1,
+    },
+    "100%": {
+      transform: "scale(2.4)",
+      opacity: 0,
+    },
+  },
+}));
+
 function Sidebar() {
   return (
     <div className="sidebar">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem dolore dicta error doloremque. Molestias, officiis aliquam fuga sapiente neque inventore nemo ducimus. Rerum consequuntur inventore obcaecati, quasi blanditiis cupiditate porro. Alias magnam ut vitae sint ducimus eligendi quisquam quibusdam. Vitae ad autem excepturi amet placeat eius sed veritatis fugit doloribus doloremque, libero odit harum qui architecto vero eligendi fugiat repudiandae voluptatibus sint quidem animi iste? Nisi iusto possimus porro quis culpa nostrum similique labore iste error cum exercitationem, molestias non, quia ex voluptatem cumque beatae libero nesciunt, iure quibusdam sint qui assumenda! Ratione dolorem ullam, dignissimos, dolor at possimus saepe, voluptate fugit modi aliquid fugiat. Voluptas laborum excepturi nesciunt nihil exercitationem ipsa expedita ratione minima nobis. Molestiae ipsa eveniet placeat necessitatibus delectus doloremque autem? Quasi, eum recusandae dolore natus odit possimus quibusdam ipsam hic. Enim adipisci deleniti saepe modi distinctio suscipit. In blanditiis adipisci aliquam quam temporibus ducimus libero molestiae sapiente. Expedita aut quo atque maiores tenetur eos sint laboriosam, itaque mollitia? Voluptate, modi est eos incidunt, nihil, reiciendis nostrum eaque laudantium quisquam eum officiis architecto rerum odio. Iusto accusantium doloribus labore. Aspernatur deleniti optio, animi repellat inventore cumque tempore, perferendis officia quasi ipsam obcaecati alias quibusdam iure temporibus corporis!</p>
+      <div className="userchat">
+        <div className="current-user">
+          <div className="current-user-profile">
+            <StyledBadge
+              overlap="circular"
+              anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
+              variant="dot"
+            >
+              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+            </StyledBadge>
+          </div>
+          <div>
+            <span className="current-user-name">testtttttt</span>
+          </div>
+        </div>
+
+        <div className="user">
+          <div className="profile">
+            <Stack direction="row" spacing={2}>
+              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+            </Stack>
+          </div>
+          <div className="username">
+            <span>Tushar</span>
+          </div>
+        </div>
+
+        <div className="user">
+          <div className="profile">
+            <Stack direction="row" spacing={2}>
+              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+            </Stack>
+          </div>
+          <div className="username">
+            <span>Tushar</span>
+          </div>
+        </div>
+
+        <div className="user">
+          <div className="profile">
+            <Stack direction="row" spacing={2}>
+              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+            </Stack>
+          </div>
+          <div className="username">
+            <span>Tushar</span>
+          </div>
+        </div>
+
+        <div className="user">
+          <div className="profile">
+            <Stack direction="row" spacing={2}>
+              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+            </Stack>
+          </div>
+          <div className="username">
+            <span>Tushar</span>
+          </div>
+        </div>
+
+        <div className="user">
+          <div className="profile">
+            <Stack direction="row" spacing={2}>
+              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+            </Stack>
+          </div>
+          <div className="username">
+            <span>Tushar</span>
+          </div>
+        </div>
+
+        <div className="user">
+          <div className="profile">
+            <Stack direction="row" spacing={2}>
+              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+            </Stack>
+          </div>
+          <div className="username">
+            <span>Tushar</span>
+          </div>
+        </div>
+
+        <div className="user">
+          <div className="profile">
+            <Stack direction="row" spacing={2}>
+              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+            </Stack>
+          </div>
+          <div className="username">
+            <span>Tushar</span>
+          </div>
+        </div>
+
+        <div className="user">
+          <div className="profile">
+            <Stack direction="row" spacing={2}>
+              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+            </Stack>
+          </div>
+          <div className="username">
+            <span>Tushar</span>
+          </div>
+        </div>
+
+        <div className="user">
+          <div className="profile">
+            <Stack direction="row" spacing={2}>
+              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+            </Stack>
+          </div>
+          <div className="username">
+            <span>Tushar</span>
+          </div>
+        </div>
+
+        <div className="user">
+          <div className="profile">
+            <Stack direction="row" spacing={2}>
+              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+            </Stack>
+          </div>
+          <div className="username">
+            <span>Tushar</span>
+          </div>
+        </div>
+
+        <div className="user">
+          <div className="profile">
+            <Stack direction="row" spacing={2}>
+              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+            </Stack>
+          </div>
+          <div className="username">
+            <span>Tushar</span>
+          </div>
+        </div>
+
+        <div className="user">
+          <div className="profile">
+            <Stack direction="row" spacing={2}>
+              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+            </Stack>
+          </div>
+          <div className="username">
+            <span>Tushar</span>
+          </div>
+        </div>
+
+        <div className="user">
+          <div className="profile">
+            <Stack direction="row" spacing={2}>
+              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+            </Stack>
+          </div>
+          <div className="username">
+            <span>Tushar</span>
+          </div>
+        </div>
+
+        <div className="user">
+          <div className="profile">
+            <Stack direction="row" spacing={2}>
+              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+            </Stack>
+          </div>
+          <div className="username">
+            <span>Tushar</span>
+          </div>
+        </div>
+
+        <div className="user">
+          <div className="profile">
+            <Stack direction="row" spacing={2}>
+              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+            </Stack>
+          </div>
+          <div className="username">
+            <span>Tushar</span>
+          </div>
+        </div>
+
+        <div className="user">
+          <div className="profile">
+            <Stack direction="row" spacing={2}>
+              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+            </Stack>
+          </div>
+          <div className="username">
+            <span>Tushar</span>
+          </div>
+        </div>
+
+        <div className="user">
+          <div className="profile">
+            <Stack direction="row" spacing={2}>
+              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+            </Stack>
+          </div>
+          <div className="username">
+            <span>Tushar</span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
